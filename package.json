@@ -12,6 +12,11 @@
     "test": "mocha -r ts-node/register tests/*.ts",
     "lint": "eslint --ext .tsx ./src/"
   },
+  "keywords": [
+    "genealogy",
+    "tree",
+    "family-tree"
+  ],
   "author": "Kenneth Ekman",
   "license": "MIT",
   "repository": {
