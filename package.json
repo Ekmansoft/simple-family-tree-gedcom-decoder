@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@types/node": "^18.7.23",
+    "axios": "^1.1.2",
     "gedcom": "^3.0.0",
     "simple-family-tree-model": "^0.3.2"
   },

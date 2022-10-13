@@ -1,2 +1,3 @@
 export { decodeGedcom } from "./decode-gedcom";
-export { buildTreeFromFile } from "./build-tree-from-gedcom-file";
+export { buildTreeFromLocalGedcomFile } from "./build-tree-from-local-gedcom-file";
+export { buildTreeFromRemoteGedcomFile } from "./build-tree-from-remote-gedcom-file";
