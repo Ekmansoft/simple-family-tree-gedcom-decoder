@@ -6,8 +6,10 @@ export function decodeGedcom(fTree: LocalTreeBackend, gedcomData: string) {
     let localGedcomData = gedcomData
     let firstProfile = false;
     //console.log("data length ", gedcomData.length);
+    //console.log("data ", gedcomData);
     const familyTree = parse(localGedcomData);
-    //console.log(compact(familyTree))
+    //console.log(familyTree)
+    compact(familyTree);
     //console.log(familyTree)
 
     // First pass, add profiles to tree
