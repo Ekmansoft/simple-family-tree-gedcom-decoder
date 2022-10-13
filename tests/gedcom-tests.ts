@@ -1,6 +1,6 @@
 import { LocalTreeBackend } from 'simple-family-tree-model';
 import { buildTreeFromRemoteGedcomFile } from '../src/index';
-import { buildTreeFromLocalGedcomFile } from '../src/build-tree-from-local-gedcom-file';
+import { buildTreeFromLocalGedcomFile } from './build-tree-from-local-gedcom-file';
 import { expect } from 'chai';
 import 'mocha';
 

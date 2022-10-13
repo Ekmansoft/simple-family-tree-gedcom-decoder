@@ -1,5 +1,5 @@
 import { TreeBackend, LocalTreeBackend } from "simple-family-tree-model";
-import { decodeGedcom } from "./decode-gedcom";
+import { decodeGedcom } from "../src/decode-gedcom";
 import { promises as fsPromises } from "fs";
 
 export async function buildTreeFromLocalGedcomFile(tree: LocalTreeBackend, filename: string): Promise<boolean>  {
