@@ -2,7 +2,7 @@ import { LocalTreeBackend } from 'simple-family-tree-model';
 import { decodeGedcom, buildTreeFromRemoteGedcomFile } from '../src/index';
 import { buildTreeFromLocalGedcomFile } from './build-tree-from-local-gedcom-file';
 import { expect } from 'chai';
-import fetch from "axios";
+import axios from "axios";
 import 'mocha';
 
 describe('Load tree', () => {
@@ -10,7 +10,7 @@ describe('Load tree', () => {
     it('Load remote gedcom file using fetch', () => {
         let tree = new LocalTreeBackend();
         const filename = "http://www.gedcom.org/samples/555SAMPLE.GED";
-        const promise = fetch(filename, { method: 'GET', } );
+        const promise = axios.get(filename);
 
         promise.then(response => {
             if (response) {

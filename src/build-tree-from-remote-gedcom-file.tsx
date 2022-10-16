@@ -1,10 +1,10 @@
 import { TreeBackend, LocalTreeBackend } from "simple-family-tree-model";
 import { decodeGedcom } from "./decode-gedcom";
-import fetch from "axios";
+import axios from "axios";
 
 export async function buildTreeFromRemoteGedcomFile(tree: LocalTreeBackend, filename: string): Promise<boolean>  {
   try {
-    const response = await fetch(filename, { method: 'GET', });
+    const response = await axios.get(filename);
     if (!response.status) {
       throw new Error(`Error! status: ${response.status}`);
     }

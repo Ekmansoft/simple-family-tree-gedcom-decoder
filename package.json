@@ -8,6 +8,7 @@
     "lib/src/*"
   ],
   "scripts": {
+    "clean": "npx rimraf ./lib/src/ && npx rimraf ./lib/tests/ ",
     "build": "tsc -p tsconfig.json",
     "test": "mocha -r ts-node/register tests/*.ts",
     "lint": "eslint --ext .tsx ./src/"
