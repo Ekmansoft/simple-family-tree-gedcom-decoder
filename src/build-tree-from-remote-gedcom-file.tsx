@@ -13,7 +13,7 @@ export async function buildTreeFromRemoteGedcomFile(tree: LocalTreeBackend, file
 
     return true;
   } catch (error) {
-    if (axios.isAxiosError(error)) {
+    if (error instanceof Error) {
       console.log('error message: ', error.message);
       return false;
     } else {
