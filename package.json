@@ -25,7 +25,6 @@
     "url": "https://github.com/Ekmansoft/simple-family-tree-gedcom-decoder"
   },
   "dependencies": {
-    "@types/axios": "^0.14.0",
     "@types/node": "^18.7.23",
     "axios": "^1.1.2",
     "gedcom": "^3.0.0",
