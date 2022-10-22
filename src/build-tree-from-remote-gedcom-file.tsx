@@ -8,8 +8,7 @@ export async function buildTreeFromRemoteGedcomFile(tree: LocalTreeBackend, file
     if (!status) {
       throw new Error(`Error! status: ${status}`);
     }
-    const gedcomData = await data;
-    decodeGedcom(tree, gedcomData);
+    decodeGedcom(tree, data);
     // console.log('success ');
 
     return true;
