@@ -1,6 +1,6 @@
 {
   "name": "simple-family-tree-gedcom-decoder",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Gedcom file decoder for simple-family-tree-model family tree",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
